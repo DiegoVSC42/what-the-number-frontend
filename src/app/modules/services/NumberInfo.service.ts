@@ -12,10 +12,13 @@ declare const WTN_API: String;
 export class NumberInfoService {
   private API = WTN_API + '/number-info';
   currentEnvironment = environment.currentEnvironment;
-  constructor(private http: HttpClient) {}
+
+
+  constructor(private http: HttpClient) { }
 
   getNumberInfo(value: bigint): Observable<NumberInfo> {
     const url = `${this.API}/${value}`;
+    console.log("URL: " + url);
     return this.http.get<NumberInfo>(url);
   }
 }

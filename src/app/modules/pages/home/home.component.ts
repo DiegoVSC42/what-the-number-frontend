@@ -26,18 +26,17 @@ import { FooterComponent } from '../../components/footer/footer.component';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   numberInfo: NumberInfo | null = null;
 
-  constructor(private numberInfoService: NumberInfoService) {}
-  ngOnInit(): void {
-    // this.analyzeNumber('10');
-  }
+  constructor(private numberInfoService: NumberInfoService) { }
 
   analyzeNumber(value: string) {
+    console.log("entrei")
     this.numberInfoService
       .getNumberInfo(BigInt(value))
       .subscribe((data: NumberInfo | null) => {
+        console.log(data)
         this.numberInfo = data;
       });
   }

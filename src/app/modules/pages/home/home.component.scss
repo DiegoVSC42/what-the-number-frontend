@@ -35,6 +35,13 @@ p {
   border: none;
   border-radius: 8px;
 }
+.input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-number {
+  -moz-appearance: textfield;
+}
 
 button {
   width: 25%;

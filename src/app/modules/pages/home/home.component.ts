@@ -29,13 +29,10 @@ import { ThemeSwitchComponent } from '../../components/theme-switch/theme-switch
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   numberInfo: NumberInfo | null = null;
 
   constructor(private numberInfoService: NumberInfoService) {}
-  ngOnInit(): void {
-    this.analyzeNumber('10');
-  }
 
   analyzeNumber(value: string) {
     console.log('entrei');

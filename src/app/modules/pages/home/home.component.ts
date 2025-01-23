@@ -10,6 +10,7 @@ import { AlternativeRepresentationsComponent } from '../../components/number-rel
 import { OtherMathematicalOperationsComponent } from '../../components/number-related/other-mathematical-operations/other-mathematical-operations.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { InfoTooltipComponent } from '../../components/info-tooltip/info-tooltip.component';
+import { ThemeSwitchComponent } from '../../components/theme-switch/theme-switch.component';
 
 @Component({
   selector: 'app-home',
@@ -23,7 +24,7 @@ import { InfoTooltipComponent } from '../../components/info-tooltip/info-tooltip
     AlternativeRepresentationsComponent,
     OtherMathematicalOperationsComponent,
     FooterComponent,
-    InfoTooltipComponent,
+    ThemeSwitchComponent,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],

@@ -16,28 +16,36 @@
   <p>Factorial: number is too big !</p>
   }
   <p>Parity: {{ numberInfo.basicNumPropertiesInfo.parity }}</p>
-
   <div class="perfectAndPrime">
-    @if (numberInfo.basicNumPropertiesInfo.perfect) {'
-    <div class="condition">
-      <p>Perfect</p>
-      <div class="circle green_circle"></div>
+    <!-- PERFECT -->
+    <div>
+      <app-info-tooltip
+        text="Perfect"
+        description="Perfect number is a positive integer that is equal to the sum of its factors except for the number itself."
+      ></app-info-tooltip>
+      <div class="condition">
+        <div
+          class="circle {{
+            numberInfo.basicNumPropertiesInfo.perfect
+              ? 'green_circle'
+              : 'red_circle'
+          }}"
+        ></div>
+      </div>
     </div>
-    }@else {
-    <div class="condition">
-      <p>Perfect</p>
-      <div class="circle red_circle"></div>
+    <!-- PRIME -->
+    <div>
+      <app-info-tooltip
+        text="Prime"
+        description="Prime number is a number greater than 1 that has exactly two distinct factors: 1 and itself."
+      ></app-info-tooltip>
+      <div
+        class="circle {{
+          numberInfo.basicNumPropertiesInfo.prime
+            ? 'green_circle'
+            : 'red_circle'
+        }}"
+      ></div>
     </div>
-    } @if (numberInfo.basicNumPropertiesInfo.prime) {'
-    <div class="condition">
-      <p>Prime</p>
-      <div class="circle green_circle"></div>
-    </div>
-    }@else {
-    <div class="condition">
-      <p>Prime</p>
-      <div class="circle red_circle"></div>
-    </div>
-    }
   </div>
 </div>

@@ -1,10 +1,20 @@
 <div class="sequence_properties">
   <h2>Sequence Properties:</h2>
-  @if (numberInfo.sequencePropertiesInfo.fibonacciSequence.isInFibonacci) {
+  <!-- FIBONACCI -->
   <div class="sequence">
-    <div class="circle green_circle"></div>
-    <p>Belongs to Fibonacci Sequence</p>
+    <div
+      class="circle {{
+        numberInfo.sequencePropertiesInfo.fibonacciSequence.isInFibonacci
+          ? 'green_circle'
+          : 'red_circle'
+      }}"
+    ></div>
+    <app-info-tooltip
+      text="Belongs to Fibonacci Sequence"
+      description="Fibonacci Sequence is a sequence of numbers, starting with zero and one, is a steadily increasing series where each number is equal to the sum of the preceding two numbers."
+    ></app-info-tooltip>
   </div>
+  @if (numberInfo.sequencePropertiesInfo.fibonacciSequence.isInFibonacci) {
   <p>
     {{ numberInfo.value }}{{ ordinalSufix(numberInfo.value) }} number in the
     sequence:
@@ -14,16 +24,22 @@
     Position in the sequence:
     {{ numberInfo.sequencePropertiesInfo.fibonacciSequence.position }}
   </p>
-  }@else {
+  }
+  <!-- TRIANGULAR -->
   <div class="sequence">
-    <div class="circle red_circle"></div>
-    <p>Belongs to Fibonacci Sequence</p>
+    <div
+      class="circle {{
+        numberInfo.sequencePropertiesInfo.triangularSequence.isInTriangular
+          ? 'green_circle'
+          : 'red_circle'
+      }}"
+    ></div>
+    <app-info-tooltip
+      text="Belongs to Triangular Sequence"
+      description="Triangular Sequence is a sequence of numbers that can be represented in the form of an equilateral triangle when arranged in a series."
+    ></app-info-tooltip>
   </div>
-  } @if (numberInfo.sequencePropertiesInfo.triangularSequence.isInTriangular) {
-  <div class="sequence">
-    <div class="circle green_circle"></div>
-    <p>Belongs to Triangular Sequence</p>
-  </div>
+  @if (numberInfo.sequencePropertiesInfo.triangularSequence.isInTriangular) {
   <p>
     {{ numberInfo.value }}{{ ordinalSufix(numberInfo.value) }} number in the
     sequence:
@@ -33,18 +49,22 @@
     Position in the sequence:
     {{ numberInfo.sequencePropertiesInfo.triangularSequence.position }}
   </p>
-  }@else {
+  }
+  <!-- SQUARE -->
   <div class="sequence">
-    <div class="circle red_circle"></div>
-    <p>Belongs to Triangular Sequence</p>
-    <div class="sequence_info"></div>
+    <div
+      class="circle {{
+        numberInfo.sequencePropertiesInfo.squareSequence.isInSquare
+          ? 'green_circle'
+          : 'red_circle'
+      }}"
+    ></div>
+    <app-info-tooltip
+      text="Belongs to Square Sequence"
+      description="Square Sequence is a sequence of numbers where each term is the square of the corresponding number on the number line."
+    ></app-info-tooltip>
   </div>
-  } @if (numberInfo.sequencePropertiesInfo.squareSequence.isInSquare) {
-  <div class="sequence">
-    <div class="circle green_circle"></div>
-    <p>Belongs to Square Sequence</p>
-    <div class="sequence_info"></div>
-  </div>
+  @if (numberInfo.sequencePropertiesInfo.squareSequence.isInSquare) {
   <p>
     {{ numberInfo.value }}{{ ordinalSufix(numberInfo.value) }} number in the
     sequence:
@@ -54,11 +74,5 @@
     Position in the sequence:
     {{ numberInfo.sequencePropertiesInfo.squareSequence.position }}
   </p>
-  }@else {
-  <div class="sequence">
-    <div class="circle red_circle"></div>
-    <p>Belongs to Square Sequence</p>
-    <div class="sequence_info"></div>
-  </div>
   }
 </div>

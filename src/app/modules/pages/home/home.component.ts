@@ -9,6 +9,7 @@ import { DigitBasedOperationsComponent } from '../../components/number-related/d
 import { AlternativeRepresentationsComponent } from '../../components/number-related/alternative-representations/alternative-representations.component';
 import { OtherMathematicalOperationsComponent } from '../../components/number-related/other-mathematical-operations/other-mathematical-operations.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { InfoTooltipComponent } from '../../components/info-tooltip/info-tooltip.component';
 
 @Component({
   selector: 'app-home',
@@ -22,21 +23,25 @@ import { FooterComponent } from '../../components/footer/footer.component';
     AlternativeRepresentationsComponent,
     OtherMathematicalOperationsComponent,
     FooterComponent,
+    InfoTooltipComponent,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   numberInfo: NumberInfo | null = null;
 
-  constructor(private numberInfoService: NumberInfoService) { }
+  constructor(private numberInfoService: NumberInfoService) {}
+  ngOnInit(): void {
+    this.analyzeNumber('10');
+  }
 
   analyzeNumber(value: string) {
-    console.log("entrei")
+    console.log('entrei');
     this.numberInfoService
       .getNumberInfo(BigInt(value))
       .subscribe((data: NumberInfo | null) => {
-        console.log(data)
+        console.log(data);
         this.numberInfo = data;
       });
   }

@@ -1,34 +1,45 @@
 <div class="advanced_properties">
   <h2>Advanced Number Properties:</h2>
-  @if (numberInfo.advancedNumPropertiesInfo.palindrome) {
   <div class="advanced">
-    <div class="circle green_circle"></div>
-    <p>Palindrome Number</p>
+    <!-- PALINDROME -->
+    <div
+      class="circle {{
+        numberInfo.sequencePropertiesInfo.fibonacciSequence.palindrome
+          ? 'green_circle'
+          : 'red_circle'
+      }}"
+    ></div>
+    <app-info-tooltip
+      text="Palindrome Number"
+      description="Palindrome number is a number that is the same when read forwards and backwards. "
+    ></app-info-tooltip>
   </div>
-  }@else {
+  <!-- MERSENNE -->
   <div class="advanced">
-    <div class="circle red_circle"></div>
-    <p>Palindrome Number</p>
+    <div
+      class="circle {{
+        numberInfo.sequencePropertiesInfo.fibonacciSequence.mersenne
+          ? 'green_circle'
+          : 'red_circle'
+      }}"
+    ></div>
+    <app-info-tooltip
+      text="Mersenne Number"
+      description="Mersenne number is a number that is one less than a power of two."
+    ></app-info-tooltip>
   </div>
-  } @if (numberInfo.advancedNumPropertiesInfo.mersenne) {
+  <!-- HARSHAD -->
   <div class="advanced">
-    <div class="circle green_circle"></div>
-    <p>Mersenne Number</p>
+    <div
+      class="circle {{
+        numberInfo.sequencePropertiesInfo.fibonacciSequence.palindrome
+          ? 'green_circle'
+          : 'red_circle'
+      }}"
+    ></div>
+    <app-info-tooltip
+      text="Harshad Number"
+      description="Harshad number is a positive integer that is divisible by the sum of its digits."
+    ></app-info-tooltip>
   </div>
-  }@else {
-  <div class="advanced">
-    <div class="circle red_circle"></div>
-    <p>Mersenne Number</p>
-  </div>
-  } @if (numberInfo.advancedNumPropertiesInfo.harshad) {
-  <div class="advanced">
-    <div class="circle green_circle"></div>
-    <p>Harshad Number</p>
-  </div>
-  }@else {
-  <div class="advanced">
-    <div class="circle red_circle"></div>
-    <p>Harshad Number</p>
-  </div>
-  }
 </div>

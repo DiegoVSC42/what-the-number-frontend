@@ -1,14 +1,18 @@
 <h2>Basic Number Properties:</h2>
 <div>
-  <p>Divisors: {{ numberInfo.basicNumPropertiesInfo.divisors }}</p>
+  <div class="text-vector">
+    <p>Divisors: {{ numberInfo.basicNumPropertiesInfo.divisors }}</p>
+  </div>
   <p>
     Divisors Quantity:
     {{ numberInfo.basicNumPropertiesInfo.divisorsCount }}
   </p>
-  <p>
-    Ten First Multiples:
-    {{ numberInfo.basicNumPropertiesInfo.tenFirstMultiples }}
-  </p>
+  <div class="text-vector">
+    <p>
+      Ten First Multiples:
+      {{ numberInfo.basicNumPropertiesInfo.tenFirstMultiples }}
+    </p>
+  </div>
 
   @if( numberInfo.basicNumPropertiesInfo.factorial != null){
   <p>Factorial: {{ numberInfo.basicNumPropertiesInfo.factorial }}</p>

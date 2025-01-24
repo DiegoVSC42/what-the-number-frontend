@@ -1,3 +1,12 @@
+.text-vector {
+  display: block; /* Garante que o container ocupe toda a largura disponível */
+  white-space: normal; /* Permite a quebra de linha */
+  word-wrap: break-word; /* Quebra palavras longas */
+  overflow-wrap: anywhere; /* Quebra palavras em qualquer ponto possível */
+  line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
+  margin-bottom: 20px;
+}
+
 .condition {
   display: flex;
   flex-direction: column;

@@ -1,5 +1,13 @@
 <div class="principal">
-  <p>{{ isDarkMode ? "Dark Theme" : "Light Theme" }}</p>
+  <p>
+    {{
+      (isDarkMode
+        ? "components.theme-switch.dark"
+        : "components.theme-switch.light"
+      ) | translate
+    }}
+  </p>
+
   <div
     class="theme-button {{ isDarkMode ? '' : 'dark' }}"
     (click)="toggleTheme()"

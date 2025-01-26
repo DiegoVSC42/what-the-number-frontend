@@ -1,0 +1,106 @@
+{
+  "pages": {
+    "home": {}
+  },
+
+  "components": {
+    "footer": {
+      "made-by": "Made by DiegoVSC42"
+    },
+    "language-switch": {
+      "title": "Language",
+      "abreviation": "en"
+    },
+    "number-related": {
+      "advanced-num-properties": {
+        "title": "Advanced Number Properties: ",
+        "palindrome": {
+          "text": "Palindrome Number",
+          "description": "Palindrome number is a number that is the same when read forwards and backwards. "
+        },
+        "mersenne": {
+          "text": "Mersenne Number",
+          "description": "Mersenne number is a number that is one less than a power of two."
+        },
+        "harshad": {
+          "text": "Harshad Number",
+          "description": "Harshad number is a positive integer that is divisible by the sum of its digits."
+        }
+      },
+      "alternative-representations": {
+        "title": "Alternative Representations",
+        "decimal": "Decimal",
+        "binary": "Binary",
+        "octal": "Octal",
+        "hexadecimal": "Hexadecimal"
+      },
+      "basic-num-properties": {
+        "title": "Basic Number Properties",
+        "divisors": "Divisors",
+        "divisors-quantity": "Divisors Quantity",
+        "ten-first-multiples": "Ten First Multiples",
+        "factorial": {
+          "text": "Factorial",
+          "error": "Number is too big to calculate factorial"
+        },
+        "parity": "Parity",
+        "parity-options": {
+          "ODD": "Odd",
+          "EVEN": "Even"
+        },
+        "perfect": {
+          "text": "Perfect",
+          "description": "Perfect number is a positive integer that is equal to the sum of its factors except for the number itself."
+        },
+        "prime": {
+          "text": "Prime",
+          "description": "Prime number is a number greater than 1 that has exactly two distinct factors: 1 and itself."
+        }
+      },
+      "digit-based-operations": {
+        "title": "Digit-Based Operations",
+        "number-of-digits": "Number of Digits",
+        "sum-of-digits": "Sum of Digits",
+        "product-of-digits": "Product of Digits"
+      },
+      "other-mathematical-operations": {
+        "title": "Other Mathematical Operations",
+        "square-root": "Square Root",
+        "cube-root": "Cube Root",
+        "natural-logarithm": "Natural Logarithm",
+        "logarithm-base-ten": "Logarithm Base Ten"
+      },
+      "sequence-properties": {
+        "title": "Sequence Properties",
+        "fibonacci": {
+          "text": "Belongs to Fibonacci Sequence",
+          "description": "Fibonacci Sequence is a sequence of numbers, starting with zero and one, is a steadily increasing series where each number is equal to the sum of the preceding two numbers."
+        },
+        "triangular": {
+          "text": "Belongs to Triangular Sequence",
+          "description": "Triangular Sequence is a sequence of numbers that can be represented in the form of an equilateral triangle when arranged in a series."
+        },
+        "square": {
+          "text": "Belongs to Square Sequence",
+          "description": "Square Sequence is a sequence of numbers where each term is the square of the corresponding number on the number line."
+        },
+
+        "belongs": {
+          "ordinal-sufix": {
+            "st": "st",
+            "nd": "nd",
+            "rd": "rd",
+            "th": "th"
+          },
+          "number-in-sequence": "number in Sequence",
+          "position-in-sequence": "Position in Sequence"
+        }
+      }
+    },
+
+    "theme-switch": {
+      "dark": "Dark Theme",
+      "light": "Light Theme"
+    }
+  }
+}

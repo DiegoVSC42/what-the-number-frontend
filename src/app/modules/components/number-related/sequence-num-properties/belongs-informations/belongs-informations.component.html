@@ -1,0 +1,19 @@
+<p>
+  {{ value
+  }}{{
+    "components.number-related.sequence-properties.belongs.ordinal-sufix." +
+      ordinalSufix(value) | translate
+  }}
+  {{
+    "components.number-related.sequence-properties.belongs.number-in-sequence"
+      | translate
+  }}:
+  {{ nthTerm }}
+</p>
+<p>
+  {{
+    "components.number-related.sequence-properties.belongs.position-in-sequence"
+      | translate
+  }}:
+  {{ position }}
+</p>

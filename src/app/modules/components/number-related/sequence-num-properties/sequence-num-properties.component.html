@@ -1,5 +1,7 @@
 <div class="sequence_properties">
-  <h2>Sequence Properties:</h2>
+  <h2>
+    {{ "components.number-related.sequence-properties.title" | translate }}:
+  </h2>
   <!-- FIBONACCI -->
   <div class="sequence">
     <div
@@ -10,20 +12,19 @@
       }}"
     ></div>
     <app-info-tooltip
-      text="Belongs to Fibonacci Sequence"
-      description="Fibonacci Sequence is a sequence of numbers, starting with zero and one, is a steadily increasing series where each number is equal to the sum of the preceding two numbers."
+      text="components.number-related.sequence-properties.fibonacci.text"
+      description="components.number-related.sequence-properties.fibonacci.description"
     ></app-info-tooltip>
   </div>
   @if (numberInfo.sequencePropertiesInfo.fibonacciSequence.isInFibonacci) {
-  <p>
-    {{ numberInfo.value }}{{ ordinalSufix(numberInfo.value) }} number in the
-    sequence:
-    {{ numberInfo.sequencePropertiesInfo.fibonacciSequence.nthFibonacciTerm }}
-  </p>
-  <p>
-    Position in the sequence:
-    {{ numberInfo.sequencePropertiesInfo.fibonacciSequence.position }}
-  </p>
+  <app-belongs-informations
+    [value]="numberInfo.value"
+    [nthTerm]="
+      numberInfo.sequencePropertiesInfo.fibonacciSequence.nthFibonacciTerm
+    "
+    [position]="numberInfo.sequencePropertiesInfo.fibonacciSequence.position"
+  />
+
   }
   <!-- TRIANGULAR -->
   <div class="sequence">
@@ -35,20 +36,19 @@
       }}"
     ></div>
     <app-info-tooltip
-      text="Belongs to Triangular Sequence"
-      description="Triangular Sequence is a sequence of numbers that can be represented in the form of an equilateral triangle when arranged in a series."
+      text="components.number-related.sequence-properties.triangular.text"
+      description="components.number-related.sequence-properties.triangular.description"
     ></app-info-tooltip>
   </div>
   @if (numberInfo.sequencePropertiesInfo.triangularSequence.isInTriangular) {
-  <p>
-    {{ numberInfo.value }}{{ ordinalSufix(numberInfo.value) }} number in the
-    sequence:
-    {{ numberInfo.sequencePropertiesInfo.triangularSequence.nthTriangularTerm }}
-  </p>
-  <p>
-    Position in the sequence:
-    {{ numberInfo.sequencePropertiesInfo.triangularSequence.position }}
-  </p>
+  <app-belongs-informations
+    [value]="numberInfo.value"
+    [nthTerm]="
+      numberInfo.sequencePropertiesInfo.triangularSequence.nthTriangularTerm
+    "
+    [position]="numberInfo.sequencePropertiesInfo.triangularSequence.position"
+  />
+
   }
   <!-- SQUARE -->
   <div class="sequence">
@@ -60,19 +60,15 @@
       }}"
     ></div>
     <app-info-tooltip
-      text="Belongs to Square Sequence"
-      description="Square Sequence is a sequence of numbers where each term is the square of the corresponding number on the number line."
+      text="components.number-related.sequence-properties.square.text"
+      description="components.number-related.sequence-properties.square.description"
     ></app-info-tooltip>
   </div>
   @if (numberInfo.sequencePropertiesInfo.squareSequence.isInSquare) {
-  <p>
-    {{ numberInfo.value }}{{ ordinalSufix(numberInfo.value) }} number in the
-    sequence:
-    {{ numberInfo.sequencePropertiesInfo.squareSequence.nthSquareTerm }}
-  </p>
-  <p>
-    Position in the sequence:
-    {{ numberInfo.sequencePropertiesInfo.squareSequence.position }}
-  </p>
+  <app-belongs-informations
+    [value]="numberInfo.value"
+    [nthTerm]="numberInfo.sequencePropertiesInfo.squareSequence.nthSquareTerm"
+    [position]="numberInfo.sequencePropertiesInfo.squareSequence.position"
+  />
   }
 </div>

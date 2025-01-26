@@ -1,10 +1,35 @@
-<h2>Alternative Representations:</h2>
+<h2>
+  {{
+    "components.number-related.alternative-representations.title" | translate
+  }}:
+</h2>
 <div>
-  <p>Decimal: {{ numberInfo.alternativeRepresentationsInfo.decimal }}</p>
-  <p>Binary: {{ numberInfo.alternativeRepresentationsInfo.binary }}</p>
   <p>
-    Hexadecimal:
+    {{
+      "components.number-related.alternative-representations.decimal"
+        | translate
+    }}:
+    {{ numberInfo.alternativeRepresentationsInfo.decimal }}
+  </p>
+
+  <p>
+    {{
+      "components.number-related.alternative-representations.binary"
+        | translate
+    }}:
+    {{ numberInfo.alternativeRepresentationsInfo.binary }}
+  </p>
+  <p>
+    {{
+      "components.number-related.alternative-representations.octal" | translate
+    }}:
+    {{ numberInfo.alternativeRepresentationsInfo.octal }}
+  </p>
+  <p>
+    {{
+      "components.number-related.alternative-representations.hexadecimal"
+        | translate
+    }}:
     {{ numberInfo.alternativeRepresentationsInfo.hexadecimal }}
   </p>
-  <p>Octal: {{ numberInfo.alternativeRepresentationsInfo.octal }}</p>
 </div>

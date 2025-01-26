@@ -5,6 +5,11 @@
   height: 100vh;
   flex-wrap: wrap;
 }
+.switches {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
 p {
   margin: 5px;
 }

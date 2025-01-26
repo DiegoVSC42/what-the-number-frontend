@@ -1,0 +1,106 @@
+{
+  "pages": {
+    "home": {}
+  },
+
+  "components": {
+    "footer": {
+      "made-by": "Feito por DiegoVSC42"
+    },
+    "language-switch": {
+      "title": "Idioma",
+      "abreviation": "pt"
+    },
+    "number-related": {
+      "advanced-num-properties": {
+        "title": "Propriedades Numéricas Avançadas: ",
+        "palindrome": {
+          "text": "Número Palíndromo",
+          "description": "Número palíndromo é um número que é o mesmo quando lido de frente para trás e vice-versa."
+        },
+        "mersenne": {
+          "text": "Número de Mersenne",
+          "description": "Número de Mersenne é um número que é um a menos que uma potência de dois."
+        },
+        "harshad": {
+          "text": "Número de Harshad",
+          "description": "Número de Harshad é um número inteiro positivo que é divisível pela soma de seus dígitos."
+        }
+      },
+      "alternative-representations": {
+        "title": "Representações Alternativas",
+        "decimal": "Decimal",
+        "binary": "Binário",
+        "octal": "Octal",
+        "hexadecimal": "Hexadecimal"
+      },
+      "basic-num-properties": {
+        "title": "Propriedades Básicas dos Números",
+        "divisors": "Divisores",
+        "divisors-quantity": "Quantidade de Divisores",
+        "ten-first-multiples": "Dez Primeiros Múltiplos",
+        "factorial": {
+          "text": "Fatorial",
+          "error": "O número é muito grande para calcular o fatorial"
+        },
+        "parity": "Paridade",
+        "parity-options": {
+          "ODD": "Ímpar",
+          "EVEN": "Par"
+        },
+        "perfect": {
+          "text": "Perfeito",
+          "description": "Número perfeito é um número inteiro positivo que é igual à soma de seus fatores, excluindo o próprio número."
+        },
+        "prime": {
+          "text": "Primo",
+          "description": "Número primo é um número maior que 1 que possui exatamente dois divisores distintos: 1 e ele mesmo."
+        }
+      },
+      "digit-based-operations": {
+        "title": "Operações Baseadas em Dígitos",
+        "number-of-digits": "Quantidade de Dígitos",
+        "sum-of-digits": "Soma dos Dígitos",
+        "product-of-digits": "Produto dos Dígitos"
+      },
+      "other-mathematical-operations": {
+        "title": "Outras Operações Matemáticas",
+        "square-root": "Raiz Quadrada",
+        "cube-root": "Raiz Cúbica",
+        "natural-logarithm": "Logaritmo Natural",
+        "logarithm-base-ten": "Logaritmo na Base Dez"
+      },
+      "sequence-properties": {
+        "title": "Propriedades de Sequência",
+        "fibonacci": {
+          "text": "Pertence à Sequência de Fibonacci",
+          "description": "A Sequência de Fibonacci é uma sequência de números, começando com zero e um, que é uma série continuamente crescente onde cada número é igual à soma dos dois números anteriores."
+        },
+        "triangular": {
+          "text": "Pertence à Sequência Triangular",
+          "description": "A Sequência Triangular é uma sequência de números que podem ser representados na forma de um triângulo equilátero quando organizados em série."
+        },
+        "square": {
+          "text": "Pertence à Sequência Quadrada",
+          "description": "A Sequência Quadrada é uma sequência de números onde cada termo é o quadrado do número correspondente na linha numérica."
+        },
+
+        "belongs": {
+          "ordinal-sufix": {
+            "st": "º",
+            "nd": "º",
+            "rd": "º",
+            "th": "º"
+          },
+          "number-in-sequence": "número na Sequência",
+          "position-in-sequence": "Posição na Sequência"
+        }
+      }
+    },
+
+    "theme-switch": {
+      "dark": "Tema Escuro",
+      "light": "Tema Claro"
+    }
+  }
+}

@@ -1,7 +1,13 @@
 <main>
   <div class="container">
     <h1>What The Number</h1>
-    <app-theme-switch></app-theme-switch>
+    <div class="switches">
+      <app-theme-switch></app-theme-switch>
+      <app-language-switch
+        [language]="currentLanguage"
+        (languageChange)="changeLanguage($event)"
+      ></app-language-switch>
+    </div>
     <label for="number"
       ><strong>Enter the number to be analyzed:</strong></label
     >

@@ -1,9 +1,24 @@
-<h2>Digit-Based Operations:</h2>
+<h2>
+  {{ "components.number-related.digit-based-operations.title" | translate }}
+</h2>
 <div>
   <p>
-    Number of Digits:
+    {{
+      "components.number-related.digit-based-operations.number-of-digits"
+        | translate
+    }}:
     {{ numberInfo.digitBasedOperationsInfo.numberOfDigits }}
   </p>
-  <p>Digit Sum: {{ numberInfo.digitBasedOperationsInfo.digitSum }}</p>
-  <p>Digit Product: {{ numberInfo.digitBasedOperationsInfo.digitProduct }}</p>
+  <p>
+    {{
+      "components.number-related.digit-based-operations.sum-of-digits"
+        | translate
+    }}: {{ numberInfo.digitBasedOperationsInfo.digitSum }}
+  </p>
+  <p>
+    {{
+      "components.number-related.digit-based-operations.product-of-digits"
+        | translate
+    }}: {{ numberInfo.digitBasedOperationsInfo.digitProduct }}
+  </p>
 </div>

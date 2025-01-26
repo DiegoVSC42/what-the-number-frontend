@@ -1,31 +1,64 @@
-<h2>Basic Number Properties:</h2>
+<h2>
+  {{ "components.number-related.basic-num-properties.title" | translate }}:
+</h2>
 <div>
   <div class="text-vector">
-    <p>Divisors: {{ numberInfo.basicNumPropertiesInfo.divisors }}</p>
+    <p>
+      {{
+        "components.number-related.basic-num-properties.divisors" | translate
+      }}: {{ numberInfo.basicNumPropertiesInfo.divisors }}
+    </p>
   </div>
   <p>
-    Divisors Quantity:
+    {{
+      "components.number-related.basic-num-properties.divisors-quantity"
+        | translate
+    }}:
     {{ numberInfo.basicNumPropertiesInfo.divisorsCount }}
   </p>
   <div class="text-vector">
     <p>
-      Ten First Multiples:
+      {{
+        "components.number-related.basic-num-properties.ten-first-multiples"
+          | translate
+      }}:
       {{ numberInfo.basicNumPropertiesInfo.tenFirstMultiples }}
     </p>
   </div>
 
   @if( numberInfo.basicNumPropertiesInfo.factorial != null){
-  <p>Factorial: {{ numberInfo.basicNumPropertiesInfo.factorial }}</p>
+  <p>
+    {{
+      "components.number-related.basic-num-properties.factorial.text"
+        | translate
+    }}:
+    {{ numberInfo.basicNumPropertiesInfo.factorial }}
+  </p>
   }@else {
-  <p>Factorial: number is too big !</p>
+  <p>
+    {{
+      "components.number-related.basic-num-properties.factorial.text"
+        | translate
+    }}:
+    {{
+      "components.number-related.basic-num-properties.factorial.error"
+        | translate
+    }}
+  </p>
   }
-  <p>Parity: {{ numberInfo.basicNumPropertiesInfo.parity }}</p>
+  <p>
+    {{ "components.number-related.basic-num-properties.parity" | translate }}:
+    {{
+      "components.number-related.basic-num-properties.parity-options." +
+        numberInfo.basicNumPropertiesInfo.parity | translate
+    }}
+  </p>
   <div class="perfectAndPrime">
     <!-- PERFECT -->
     <div>
       <app-info-tooltip
-        text="Perfect"
-        description="Perfect number is a positive integer that is equal to the sum of its factors except for the number itself."
+        text="components.number-related.basic-num-properties.perfect.text"
+        description="components.number-related.basic-num-properties.perfect.description"
       ></app-info-tooltip>
       <div class="condition">
         <div
@@ -40,8 +73,8 @@
     <!-- PRIME -->
     <div>
       <app-info-tooltip
-        text="Prime"
-        description="Prime number is a number greater than 1 that has exactly two distinct factors: 1 and itself."
+        text="components.number-related.basic-num-properties.prime.text"
+        description="components.number-related.basic-num-properties.prime.description"
       ></app-info-tooltip>
       <div
         class="circle {{

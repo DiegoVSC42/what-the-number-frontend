@@ -1,6 +1,6 @@
 <main>
   <div class="container">
-    <h1>What The Number</h1>
+    <h1>{{ "pages.home.app-title" | translate }}</h1>
     <div class="switches">
       <app-theme-switch></app-theme-switch>
       <app-language-switch
@@ -9,17 +9,17 @@
       ></app-language-switch>
     </div>
     <label for="number"
-      ><strong>Enter the number to be analyzed:</strong></label
+      ><strong>{{ "pages.home.number-to-analyze" | translate }}:</strong></label
     >
     <input
       #numberInput
       type="number"
-      placeholder="Enter a number"
+      [placeholder]="'pages.home.enter-a-number' | translate"
       (keydown.enter)="analyzeNumber(numberInput.value)"
       class="input-number"
     />
     <button class="btn btn-primary" (click)="analyzeNumber(numberInput.value)">
-      Analyze
+      {{ "pages.home.analyze" | translate }}
     </button>
 
     @if(numberInfo) {

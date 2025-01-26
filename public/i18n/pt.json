@@ -1,6 +1,11 @@
 {
   "pages": {
-    "home": {}
+    "home": {
+      "app-title": "Qual é o Número",
+      "number-to-analyze": "Digite o número para analisar",
+      "enter-a-number": "Digite um número",
+      "analyze": "Analisar"
+    }
   },
 
   "components": {

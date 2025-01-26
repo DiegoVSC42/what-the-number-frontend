@@ -1,6 +1,11 @@
 {
   "pages": {
-    "home": {}
+    "home": {
+      "app-title": "What The Number",
+      "number-to-analyze": "Enter the number to analyze",
+      "enter-a-number": "Enter a number",
+      "analyze": "Analyze"
+    }
   },
 
   "components": {

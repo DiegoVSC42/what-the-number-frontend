@@ -33,12 +33,11 @@ import {
     ThemeSwitchComponent,
     LanguageSwitchComponent,
     TranslatePipe,
-    TranslateDirective,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   numberInfo: NumberInfo | null = null;
 
   constructor(
@@ -48,9 +47,6 @@ export class HomeComponent implements OnInit {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('en');
     this.translate.use('en');
-  }
-  ngOnInit(): void {
-    this.analyzeNumber('10');
   }
 
   analyzeNumber(value: string) {
